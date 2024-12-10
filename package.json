@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm tailwindcss -i src/input.css -o public/output.css --watch"
   },
   "author": "",
   "license": "ISC",
