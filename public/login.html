@@ -8,11 +8,40 @@
   </head>
   <body class="min-h-screen bg-gray-600 bg-no-repeat">
     <div class="w-full flex justify-center min-h-screen">
-      <div class="my-16 bg-gray-900 max-w-2xl w-full rounded-md text-white shadow-lg mx-8">
-        <h2 class="text-center text-4xl md:text-7xl sm:text-2xl font-bold mb-6 mt-5">Login</h2>
+      <div class="my-20 bg-gray-900 max-w-2xl w-full rounded-md text-white shadow-lg mx-8">
+        <h2 class="text-center text-4xl md:text-7xl sm:text-2xl font-bold mb-8 mt-5">Login</h2>
         <form action="#" method="POST" class="mx-4 my-2">
+          
+          <!-- Username -->
           <label for="username">Username</label>
+          <input 
+          type="text"
+          id="username"
+          name="username"
+          class="mb-8 mt-0.5 w-full px-2 py-2 text-sm sm:text-base rounded bg-gray-100 focus:outline-none focus:ring text-black"
+          placeholder="Your Username"
+          required="">
+          
+          <!-- Password -->
+          <label for="password">Password</label>
+          <input 
+          type="password"
+          id="password"
+          name="password"
+          class="mb-8 mt-0.5 w-full px-2 py-2 text-sm sm:text-base rounded bg-gray-100 focus:outline-none focus:ring text-black"
+          placeholder="Your Password"
+          required>
+          
+          <!-- Submit Button -->
+          <button
+          type="submit"
+          class="w-full py-2 text-sm sm:text-base bg-blue-600 hover:bg-blue-700 rounded font-bold">
+            Login
+          </button>
         </form>
+        
+        
+        
       </div>
     <div>
   </body>
