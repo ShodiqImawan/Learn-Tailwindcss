@@ -9,8 +9,8 @@
   <body class="min-h-screen bg-gray-600 bg-no-repeat">
     <div class="w-full flex justify-center min-h-screen">
       <div class="my-20 bg-gray-900 max-w-2xl w-full rounded-md text-white shadow-lg mx-8">
-        <h2 class="text-center text-4xl md:text-7xl sm:text-2xl font-bold mb-8 mt-5">Login</h2>
-        <form action="#" method="POST" class="mx-4 my-2">
+        <h2 class="text-center text-4xl md:text-7xl sm:text-2xl font-bold mb-8 mt-8">Login</h2>
+        <form action="#" method="POST" class="mx-4">
           
           <!-- Username -->
           <label for="username">Username</label>
@@ -32,27 +32,32 @@
               class="w-full px-2 py-2 text-sm sm:text-base rounded bg-gray-100 focus:outline-none focus:ring text-black"
               placeholder="Your Password"
               required>
-              <a href="/recovery" class="absolute right-0 mt-12 -translate-y-1/2 text-sm text-blue-400 hover:text-blue-700">Recovery password</a>
-              
+              <a href="/recovery" class="absolute right-0 mt-14 -translate-y-1/2 text-sm text-blue-400 hover:text-blue-700">Recovery password</a>
           </div>
           
           <!-- Checkbox for Agreement -->
-          <input 
-          type="checkbox"
-          id="agreement"
-          name="agreement"
-          class="mt-8 mb-8">
+          <div class="flex items-center gap-2 mt-12">
+            <input 
+            type="checkbox"
+            id="agreement"
+            name="agreement"
+            class="w-4 h-4 accent-blue-500 cursor-pointer"
+            required>
+            <label for="agreement" class="text-sm sm:text-base">
+              I Agree to <a href="/terms" class="text-blue-500 hover:text-blue-800">The Terms and Conditions</a>
+            </label>
+          </div>
           
           <!-- Submit Button -->
           <button
           type="submit"
-          class="w-full py-2 text-sm sm:text-base bg-blue-600 hover:bg-blue-700 rounded font-bold">
+          class="mt-2 w-full py-2 text-sm sm:text-base bg-blue-600 hover:bg-blue-700 rounded font-bold">
             Login
           </button>
         </form>
         
         <!-- Register Link -->
-        <p class="text-sm text-center mt-4">
+        <p class="text-sm text-center mt-4 mb-0">
           Belum Punya Akun?
           <a href="/register" class="text-blue-400 hover:text-blue-600">Daftar di sini</a>
         </p>
